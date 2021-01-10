@@ -1,0 +1,25 @@
+Gitlet Design Document
+----------------------
+
+
+Classes and Data Structures
+---------------------------
+Main class
+
+Commit class
+
+Blob class
+
+
+
+Algorithms
+----------
+No algorithms, just using hashmaps.
+
+Persistence
+-----------
+In order to keep track of the changes made to files,
+I will serialize commits and blobs every time I call a gitlet Main.main
+function. I will then store it in a folder called "storage", and then, when I call
+any function, I will deserialize all commits pertinent to the function and blobs being
+modified.
